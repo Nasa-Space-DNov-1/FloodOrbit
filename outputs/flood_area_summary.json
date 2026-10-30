@@ -1,0 +1,10 @@
+{
+  "status": "SUCCESS",
+  "place_name": "Thore Valley, Gilgit-Baltistan",
+  "utm_epsg": 32643,
+  "orbital_compatibility": "PASSED",
+  "total_flood_pixels": 625,
+  "total_debris_pixels": 113,
+  "total_candidate_area_m2": 250000.0,
+  "total_candidate_area_km2": 0.25
+}

@@ -1,0 +1,11 @@
+{
+  "orbital_check": "PASSED",
+  "orbit_pass_direction": "ASCENDING",
+  "rejected_complex_terms": [
+    "HHHV"
+  ],
+  "mmu_threshold_pixels": 4,
+  "speckle_pixels_filtered": 2,
+  "supervised_ml_status": "BYPASSED_NO_INDEPENDENT_GROUND_TRUTH",
+  "during_event_scene": "GAP_RECORDED_ORBIT_PERIODICITY"
+}
