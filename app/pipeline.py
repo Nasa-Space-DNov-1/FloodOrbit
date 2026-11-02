@@ -119,7 +119,7 @@ def execute_16_stage_pipeline(payload: PipelineRunRequest) -> dict:
     total_area_km2 = float(total_area_m2 / 1_000_000.0)
 
     flood_geojson = vectorize_flood_mask_to_geojson(cleaned_flood_mask, target_lon, target_lat)
-    geojson_path = "outputs/candidate_flood_extent.geojson"
+    geojson_path = "data/flood_boundary.geojson"
     with open(geojson_path, "w") as f:
         json.dump(flood_geojson, f, indent=2)
 
@@ -133,7 +133,7 @@ def execute_16_stage_pipeline(payload: PipelineRunRequest) -> dict:
         "total_candidate_area_m2": total_area_m2,
         "total_candidate_area_km2": total_area_km2
     }
-    summary_path = "outputs/flood_area_summary.json"
+    summary_path = "data/summary.json"
     with open(summary_path, "w") as f:
         json.dump(summary_data, f, indent=2)
 
